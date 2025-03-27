@@ -68,7 +68,7 @@ def test_Login(drive):
 @allure.feature("Prueba de Checkbox")
 @allure.story("Checkbox Funcional")
 @allure.severity(allure.severity_level.CRITICAL)
-def test2():
+def test_Checkboxes():
     driver.get("https://the-internet.herokuapp.com")
     webWaitXPATH("/checkboxes")
     with allure.step("Entrar a Checkboxes"):
@@ -87,7 +87,7 @@ def test2():
 @allure.feature("Prueba de Dropdown")
 @allure.story("Dropdown Funcional")
 @allure.severity(allure.severity_level.CRITICAL)
-def test3():
+def test_Dropdown():
     driver.get("https://the-internet.herokuapp.com")
     webWaitXPATH("/dropdown")
     with allure.step("Entrar a Dropdown"):
@@ -100,4 +100,3 @@ def test3():
     with allure.step("Verificar Dropdown"):
         assert dropdown.first_selected_option.text == "Option 1"
         print(" Prueba de Dropdown Exitosa")
-
